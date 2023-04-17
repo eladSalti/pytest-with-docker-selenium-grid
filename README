@@ -1,0 +1,23 @@
+###This is an example of a simple python project that can run with docker selenium-grid###
+
+To work with docker-selenium-grid you need the following requirements:
+1. Docker. you can download docker for Windows from here - https://docs.docker.com/desktop/install/windows-install/
+2. JDK 1.7 or above.
+
+Installing and setup:
+1. Install python dependencies - In the current directory of the project open cmd and hit the following command -
+    $ pip install -r requirements.txt
+2. Create docker images and run docker containers - In the current directory of the project open cmd and hit the
+   following command - $docker-compose up
+
+Working with the selenium-grid hub:
+Open browser and enter the following link - http://localhost:4444/ui
+
+How to run our tests from the IDE (pycharm):
+1. In the IDE (pycharm) open the run configuration.
+2. Add pytest.
+3. In the "Additional arguments" you can use the "--browser $chrome or $firefox" the default value is firefox.
+
+How to run the tests from the cmd:
+1. Open CMD in the current directory of our program.
+2. Hit the following command - $ pytest --browser $chrome or $firefox
